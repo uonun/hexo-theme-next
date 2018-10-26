@@ -88,7 +88,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: " - 怀疑一切，认知未来 - "
+  custom_text: " - 思考 / 一丝不苟 / 精益求精 / 永不满足 / 怀疑一切 / 认知未来 - "
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -270,7 +270,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 600
 
 # Post meta display settings
