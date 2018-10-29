@@ -1,7 +1,137 @@
 // Custom styles.
+::selection {
+    background: #d4efd6;
+    color: #006300;
+}
+
+.site-meta .site-title {
+    font-size: 28px;
+}
 
 .main {
     padding-bottom: 280px;
+}
+
+@media (min-width: 1200px){
+    .container .main-inner {
+        width: 900px;
+    }
+}
+    
+    @media (min-width: 1600px) {
+    .container .main-inner {
+        width: 1000px;
+    }
+}
+    
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+    color: #ba3925;
+    font-weight: normal;
+    font-family: "Open Sans","DejaVu Sans",sans-serif;
+    line-height: 240%;
+    margin-top: 1em;
+}
+
+.post-body h1 > a.headerlink,
+.post-body h2 > a.headerlink,
+.post-body h3 > a.headerlink,
+.post-body h4 > a.headerlink,
+.post-body h5 > a.headerlink,
+.post-body h6 > a.headerlink{
+    position: absolute;
+    z-index: 1001;
+    width: 1.5ex;
+    margin-left: -1.5ex;
+    display: block;
+    text-decoration: none!important;
+    border-bottom: 0;
+    visibility: hidden;
+    text-align: center;
+    font-weight: 400;
+}
+
+.post-body h1 > a.headerlink::before,
+.post-body h2 > a.headerlink::before,
+.post-body h3 > a.headerlink::before,
+.post-body h4 > a.headerlink::before,
+.post-body h5 > a.headerlink::before,
+.post-body h6 > a.headerlink::before {
+    content: "\00A7";
+    font-size: 1.1em;
+    display: block;
+    color: #1d4b8f;
+}
+
+.post-body h1:hover > a.headerlink,
+.post-body h2:hover > a.headerlink,
+.post-body h3:hover > a.headerlink,
+.post-body h4:hover > a.headerlink,
+.post-body h5:hover > a.headerlink,
+.post-body h6:hover > a.headerlink {
+    visibility: visible;
+}
+
+.post-title{
+    color:#3e3e3e;
+    font-weight: 360;
+}
+
+@media (min-width: 1200px){
+.posts-expand .post-title {
+    font-size: 32px;
+}}
+
+.posts-expand .post-title-link {
+    color: #167300;
+    line-height: 1.5;
+}
+
+.posts-expand .post-title-link::before{
+    background-color: #167300;
+}
+
+blockquote {
+    padding: 5px 15px;
+    border-left: 4px solid #cecece;
+    background-color: #FAFAFA;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.post-body > blockquote::before {
+    content: "\201c";
+    float: left;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: .6em;
+    margin-left: -0.5em;
+    color: #929292;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-family: monospace;
+    font-style: normal;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+a[rel=noopener] {
+    color: #1d4b8f;
+    vertical-align: super;
+    font-size: .3em;
+    border-bottom: 0;
+    font-weight: normal;
+}
+
+.post-button a {
+    border-bottom-color: #167300;
+    color: #167300;
+    padding-left: .2em;
 }
 
 #footer {
