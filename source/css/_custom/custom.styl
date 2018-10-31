@@ -64,7 +64,7 @@
     content: "\00A7";
     font-size: 1.1em;
     display: block;
-    color: #1d4b8f;
+    color: #ba3925;
 }
 
 .post-body h1:hover > a.headerlink,
@@ -99,7 +99,7 @@ blockquote {
     padding: 5px 15px;
     border-left: 4px solid #cecece;
     background-color: #FAFAFA;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     margin-bottom: 1em;
 }
 
@@ -120,13 +120,21 @@ blockquote p {
     margin-bottom: 0;
 }
 
-a[rel=noopener] {
+.post-body a {
+    color: #167300;
+}
+
+a:hover, span.exturl:hover, a:active, span.exturl:active {
+    border-bottom-color: #167300;
+}
+
+/* a[rel=noopener][target=_blank] {
     color: #1d4b8f;
     vertical-align: super;
     font-size: .3em;
     border-bottom: 0;
     font-weight: normal;
-}
+} */
 
 .post-button a {
     border-bottom-color: #167300;
